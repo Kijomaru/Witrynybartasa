@@ -1,0 +1,228 @@
+.center 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header 
+{
+  font-size: 1.8em;
+  margin: 5px 0;
+}
+.white 
+{
+  color: white;
+}
+.title 
+{
+  color: yellow !important;
+  font-weight: 600;
+}
+.bold 
+{
+  font-weight: 600;
+}
+.vertical-center
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#background #main-container 
+{
+  display: grid;
+  width: 80vw;
+  height: 95%;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 5fr 40% 4fr 1fr;
+  grid-gap: 5px;
+}
+#background #main-container #header-container 
+{
+  grid-column: 1 / 3;
+  border: 3px solid white;
+}
+#background #main-container #header-container header 
+{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+#background #main-container #header-container header .header-top 
+{
+  display: flex;
+  flex-flow: row;
+  flex: 0 1 50px;
+  position: relative;
+}
+#background #main-container #header-container header .header-top h1 
+{
+  margin: 0;
+  padding: 5px 30px;
+  color: white;
+  flex: 0 1 50%;
+}
+#background #main-container #header-container header .header-top nav 
+{
+  flex: 1 1;
+}
+#background #main-container #header-container header .header-top nav .navbar-container 
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+#background #main-container #header-container header .header-top nav .navbar-container a 
+{
+  flex: 1 1;
+  text-decoration: none;
+  position: relative;
+}
+#background #main-container #header-container header .header-top nav .navbar-container a div 
+{
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+#background #main-container #header-container header .header-top nav .navbar-container a:hover
+{
+  transition: .4s all linear;
+  background: rgba(0, 0, 0, 0.329);
+}
+#background #main-container #header-container header .header-down
+{
+  flex: 1 1;
+  background: white;
+  position: relative;
+}
+#background #main-container #header-container header .header-down .background 
+{
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: url("https://d-pt.ppstatic.pl/kadry/k/r/1/75/f8/55d00ddfcfa63_o,size,969x565,q,71,h,a035e6.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+#main-container #aside-container
+ {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  border: 3px solid white;
+}
+#main-container #aside-container aside 
+{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+#main-container #aside-container aside .gallery 
+{
+  flex: 0 1 40%;
+  margin: 15px;
+}
+#main-container #aside-container aside .gallery .photos-container 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  height: 90%;
+}
+#main-container #aside-container aside .gallery .photos-container .photo
+{
+  background: url("photo.png");
+  background-size: cover;
+  border: 3px solid white;
+}
+#main-container #aside-container aside .info 
+{
+  flex: 1 1;
+  margin: 15px;
+}
+#main-container #aside-container aside .info p 
+{
+  margin: 2px;
+}
+
+#main-container #footer-container {
+  grid-column: 1 / 3;
+  background: limegreen;
+  border-radius: 6px;
+}
+#main-container #footer-container footer 
+{
+  width: inherit;
+  height: 100%;
+}
+#main-container #footer-container footer .footer-flex 
+{
+  display: flex;
+  flex-flow: row;
+  height: inherit;
+}
+#main-container #footer-container footer .footer-flex .copyright 
+{
+  flex: 1 1;
+  position: relative;
+}
+#main-container #footer-container footer .footer-flex .copyright span 
+{
+  margin-left: 20px;
+}
+#main-container #footer-container footer .footer-flex a.nav-element 
+{
+  flex: 0 1 100px;
+  position: relative;
+}
+#main-container #footer-container footer .footer-flex a.nav-element span 
+{
+  width: 100%;
+  text-align: center;
+}
+#main-container #footer-container footer .footer-flex a.nav-element :hover 
+{
+text-decoration: underline;}
+#background #main-container #section-container 
+{
+  border: 3px solid white;
+}
+#background #main-container #section-container section 
+{
+  margin: 12px;
+}
+#background #main-container #section-container section .news-container 
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 5px;
+  height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#background #main-container #section-container section .news-container .news 
+{
+  height: 150px;
+}
+#background #main-container #section-container section .news-container .news p.title 
+{
+  color: yellow;
+  font-weight: 600;
+}
+#background #main-container #section-container section .news-container .news p 
+{
+  color: white;
+}
+#background #main-container #article-container 
+{
+  border: 3px solid white;
+  color: white;
+    overflow-y: auto;
+}
+#background #main-container #article-container article 
+{
+  margin: 12px;
+}
